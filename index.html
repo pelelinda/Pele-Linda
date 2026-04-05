@@ -18,6 +18,18 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
+<!-- UTMify Pixel -->
+<script>
+  window.pixelId = "69cd73477ba8ccd0564438be";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+<!-- End UTMify Pixel -->
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pele Linda — Pele Limpa em 21 Dias com Receitas Caseiras</title>
@@ -48,7 +60,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     overflow-x: hidden;
   }
 
-  /* ── GRAIN OVERLAY ── */
   body::before {
     content: '';
     position: fixed;
@@ -59,7 +70,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     opacity: 0.4;
   }
 
-  /* ── TOPO ── */
   .topo {
     background: linear-gradient(90deg, var(--dourado-escuro), var(--dourado), var(--dourado-escuro));
     color: var(--preto);
@@ -71,7 +81,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     text-transform: uppercase;
   }
 
-  /* ── HERO ── */
   .hero {
     position: relative;
     padding: 80px 20px 70px;
@@ -115,14 +124,8 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     font-weight: 600;
   }
 
-  .hero h1 em {
-    color: var(--dourado);
-    font-style: italic;
-  }
-
-  .hero h1 span {
-    color: var(--rosa-claro);
-  }
+  .hero h1 em { color: var(--dourado); font-style: italic; }
+  .hero h1 span { color: var(--rosa-claro); }
 
   .hero p.sub {
     font-size: clamp(15px, 2vw, 18px);
@@ -189,7 +192,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
 
   .garantia-mini strong { color: var(--dourado); }
 
-  /* ── DIVISOR ── */
   .divisor {
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--dourado), transparent);
@@ -197,7 +199,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     opacity: 0.4;
   }
 
-  /* ── SEÇÃO ── */
   section { padding: 80px 20px; }
   .container { max-width: 880px; margin: 0 auto; }
 
@@ -233,7 +234,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     font-weight: 300;
   }
 
-  /* ── DOR ── */
   .secao-dor {
     background: var(--preto-card);
     border-top: 1px solid var(--preto-borda);
@@ -259,10 +259,7 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     transition: border-color 0.3s, background 0.3s;
   }
 
-  .dor-card:hover {
-    border-left-color: var(--dourado);
-    background: #151515;
-  }
+  .dor-card:hover { border-left-color: var(--dourado); background: #151515; }
 
   .dor-card strong {
     display: block;
@@ -273,7 +270,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     letter-spacing: 0.8px;
   }
 
-  /* ── SOLUÇÃO ── */
   .secao-solucao {
     background: radial-gradient(ellipse at 50% 50%, rgba(212,168,67,0.06) 0%, transparent 70%), var(--preto);
   }
@@ -288,8 +284,7 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     position: relative;
   }
 
-  .solucao-destaque::before,
-  .solucao-destaque::after {
+  .solucao-destaque::before, .solucao-destaque::after {
     content: '✦';
     position: absolute;
     color: var(--dourado);
@@ -309,7 +304,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
 
   .solucao-destaque p em { color: var(--dourado); }
 
-  /* ── RECEBE ── */
   .secao-recebe {
     background: var(--preto-card);
     border-top: 1px solid var(--preto-borda);
@@ -359,7 +353,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
 
   .recebe-card p { font-size: 13px; color: var(--cinza); line-height: 1.8; }
 
-  /* ── PLANO ── */
   .secao-plano {
     background: radial-gradient(ellipse at 30% 50%, rgba(233,30,140,0.05) 0%, transparent 60%), var(--preto);
   }
@@ -427,7 +420,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     background: rgba(212,168,67,0.04);
   }
 
-  /* ── RECEITAS ── */
   .secao-receitas {
     background: var(--preto-card);
     border-top: 1px solid var(--preto-borda);
@@ -464,7 +456,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     letter-spacing: 1px;
   }
 
-  /* ── DEPOIMENTOS ── */
   .secao-depoimentos {
     background: radial-gradient(ellipse at 70% 30%, rgba(212,168,67,0.05) 0%, transparent 60%), var(--preto);
   }
@@ -520,7 +511,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
   .depo-info { font-size: 11px; color: var(--cinza); margin-top: 2px; }
   .estrelas { color: var(--dourado); font-size: 12px; margin-bottom: 12px; letter-spacing: 2px; }
 
-  /* ── FAQ ── */
   .secao-objecoes {
     background: var(--preto-card);
     border-top: 1px solid var(--preto-borda);
@@ -528,7 +518,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
   }
 
   .faq-lista { margin-top: 44px; display: grid; gap: 1px; background: var(--preto-borda); border: 1px solid var(--preto-borda); }
-
   .faq-item { background: var(--preto-card); }
 
   .faq-pergunta {
@@ -558,7 +547,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     color: var(--cinza-claro);
     line-height: 1.9;
     padding: 0 28px;
-    border-top: 0px solid var(--preto-borda);
     font-weight: 300;
   }
 
@@ -568,7 +556,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     border-top: 1px solid var(--preto-borda);
   }
 
-  /* ── GARANTIA ── */
   .secao-garantia {
     background: radial-gradient(ellipse at 50% 50%, rgba(212,168,67,0.07) 0%, transparent 70%), var(--preto);
     text-align: center;
@@ -606,7 +593,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
   .garantia-box p { font-size: 15px; color: var(--cinza-claro); line-height: 1.9; font-weight: 300; }
   .garantia-box strong { color: var(--branco-suave); font-weight: 600; }
 
-  /* ── PREÇO ── */
   .secao-preco {
     background:
       radial-gradient(ellipse at 50% 0%, rgba(212,168,67,0.15) 0%, transparent 50%),
@@ -679,7 +665,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
   }
 
   .preco-por sup { font-size: 32px; vertical-align: super; }
-
   .preco-parcela { font-size: 13px; color: var(--cinza); margin-bottom: 44px; letter-spacing: 0.5px; }
 
   .btn-comprar {
@@ -721,7 +706,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     letter-spacing: 0.5px;
   }
 
-  /* ── RODAPÉ ── */
   footer {
     background: #050505;
     border-top: 1px solid var(--preto-borda);
@@ -745,7 +729,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     text-transform: uppercase;
   }
 
-  /* ── STICKY MOBILE ── */
   .sticky-cta {
     position: fixed;
     bottom: 0; left: 0; right: 0;
@@ -776,7 +759,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
     .semana-conteudo { padding: 24px 20px; }
   }
 
-  /* ── ANIMAÇÕES ── */
   .fade-in {
     opacity: 0;
     transform: translateY(28px);
@@ -789,14 +771,12 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
 
 <div class="topo">🌸 Promoção Semana da Mulher — Desconto especial por tempo limitado</div>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-linhas"></div>
   <div class="container">
     <div class="badge-topo">✦ Guia Digital — Acesso Imediato ✦</div>
     <h1>Sua pele pode ser <em>completamente diferente</em><br>em <span>21 dias</span></h1>
     <p class="sub">Sem produto caro. Sem dermatologista. Com receitas caseiras que custam menos de R$10 e ingredientes que você provavelmente já tem em casa.</p>
-
     <div class="hero-checks">
       <div class="hero-check"><span class="ico">✦</span> Sem acne</div>
       <div class="hero-check"><span class="ico">✦</span> Sem manchas</div>
@@ -804,7 +784,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
       <div class="hero-check"><span class="ico">✦</span> Plano de 21 dias</div>
       <div class="hero-check"><span class="ico">✦</span> Resultado visível</div>
     </div>
-
     <a href="#preco" class="btn-principal">Quero Minha Pele Linda Agora</a>
     <p class="garantia-mini">🔒 Compra segura &nbsp;·&nbsp; <strong>7 dias de garantia</strong> &nbsp;·&nbsp; Acesso imediato</p>
   </div>
@@ -812,58 +791,39 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
 
 <div class="divisor"></div>
 
-<!-- DOR -->
 <section class="secao-dor">
   <div class="container fade-in">
     <div class="tag-secao">✦ Você se identifica?</div>
     <h2 class="titulo-secao">Já tentou de tudo e a pele<br><em>continua do mesmo jeito?</em></h2>
     <p class="desc-secao">Se você já passou por alguma dessas situações, saiba que não é culpa sua — é que ninguém te ensinou o método certo.</p>
-
     <div class="dor-grid">
-      <div class="dor-card">
-        <strong>Produto caro que não funcionou</strong>
-        Você investiu em cremes, séruns e tratamentos que prometiam acabar com a acne e as manchas — e o resultado foi zero.
-      </div>
-      <div class="dor-card">
-        <strong>Remédio que voltou tudo</strong>
-        O dermatologista passou antibiótico, ficou bem por um tempo, mas quando parou de tomar a acne voltou com força.
-      </div>
-      <div class="dor-card">
-        <strong>Vergonha de sair sem maquiagem</strong>
-        Você se sente insegura sem cobertura. Não consegue imaginar estar em público com a pele natural.
-      </div>
-      <div class="dor-card">
-        <strong>Tentou natural mas sem resultado</strong>
-        Já experimentou receitas caseiras da internet, mas sem uma rotina estruturada e na ordem certa, não funcionou.
-      </div>
+      <div class="dor-card"><strong>Produto caro que não funcionou</strong>Você investiu em cremes, séruns e tratamentos que prometiam acabar com a acne e as manchas — e o resultado foi zero.</div>
+      <div class="dor-card"><strong>Remédio que voltou tudo</strong>O dermatologista passou antibiótico, ficou bem por um tempo, mas quando parou de tomar a acne voltou com força.</div>
+      <div class="dor-card"><strong>Vergonha de sair sem maquiagem</strong>Você se sente insegura sem cobertura. Não consegue imaginar estar em público com a pele natural.</div>
+      <div class="dor-card"><strong>Tentou natural mas sem resultado</strong>Já experimentou receitas caseiras da internet, mas sem uma rotina estruturada e na ordem certa, não funcionou.</div>
     </div>
   </div>
 </section>
 
 <div class="divisor"></div>
 
-<!-- SOLUÇÃO -->
 <section class="secao-solucao">
   <div class="container fade-in">
     <div class="tag-secao">✦ A virada de chave</div>
     <h2 class="titulo-secao">O problema não é você — é a<br><em>falta da rotina certa</em></h2>
-
     <div class="solucao-destaque">
       <p>Pele limpa não vem de um produto milagroso.<br>Vem de <em>consistência + ingredientes certos + ordem correta.</em><br>E isso é exatamente o que o Guia Pele Linda entrega.</p>
     </div>
-
     <p class="desc-secao">Desenvolvemos uma rotina completa baseada em ativos naturais comprovados — com receitas caseiras que custam menos de R$10 no total, organizadas em um plano de 21 dias que qualquer mulher consegue seguir, mesmo sem tempo e sem experiência com skincare.</p>
   </div>
 </section>
 
 <div class="divisor"></div>
 
-<!-- RECEBE -->
 <section class="secao-recebe">
   <div class="container fade-in">
     <div class="tag-secao">✦ O que está incluído</div>
     <h2 class="titulo-secao">Tudo que você precisa para<br><em>transformar sua pele</em></h2>
-
     <div class="recebe-grid">
       <div class="recebe-card"><span class="recebe-ico">🔬</span><h3>A Verdade Sobre Acne e Manchas</h3><p>Entenda por que a acne aparece e por que as manchas ficam — e como eliminar os dois com o método certo.</p></div>
       <div class="recebe-card"><span class="recebe-ico">🧪</span><h3>Conheça Seu Tipo de Pele</h3><p>Teste rápido para identificar seu tipo de pele e a rotina exata para cada um.</p></div>
@@ -879,13 +839,11 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
 
 <div class="divisor"></div>
 
-<!-- PLANO -->
 <section class="secao-plano">
   <div class="container fade-in">
     <div class="tag-secao">✦ Seu cronograma</div>
     <h2 class="titulo-secao">Como funciona o<br><em>Plano de 21 Dias</em></h2>
     <p class="desc-secao">Cada semana foi planejada para introduzir os cuidados no momento certo, maximizando os resultados de forma progressiva.</p>
-
     <div class="plano-semanas">
       <div class="semana-card">
         <div class="semana-num"><span>Semana</span><strong>1</strong></div>
@@ -917,12 +875,10 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
 
 <div class="divisor"></div>
 
-<!-- RECEITAS -->
 <section class="secao-receitas">
   <div class="container fade-in">
     <div class="tag-secao">✦ As receitas</div>
     <h2 class="titulo-secao">6 das <em>15 receitas caseiras</em><br>que estão incluídas</h2>
-
     <div class="receitas-grid">
       <div class="receita-card"><span class="emoji">🍯</span><h4>Máscara Mel + Canela</h4><p>Antibacteriana — combate acne ativa. Aplique 3x por semana por 15 minutos.</p></div>
       <div class="receita-card"><span class="emoji">🌼</span><h4>Tônico de Camomila</h4><p>Acalma vermelhidão e uniformiza. Use após cada limpeza, manhã e noite.</p></div>
@@ -931,46 +887,34 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
       <div class="receita-card"><span class="emoji">☕</span><h4>Esfoliante de Café</h4><p>Remove células mortas e ilumina. Use 1x por semana por 2 minutos.</p></div>
       <div class="receita-card"><span class="emoji">🧊</span><h4>Crioterapia Caseira</h4><p>Cubo de gelo pela manhã. Reduz poros e inflamação em 1 minuto.</p></div>
     </div>
-
     <p class="mais-receitas">✦ + 9 receitas exclusivas adicionais no guia completo ✦</p>
   </div>
 </section>
 
 <div class="divisor"></div>
 
-<!-- DEPOIMENTOS -->
 <section class="secao-depoimentos">
   <div class="container fade-in">
     <div class="tag-secao">✦ Resultados reais</div>
     <h2 class="titulo-secao">O que mulheres como você<br><em>estão dizendo</em></h2>
-
     <div class="depo-grid">
       <div class="depo-card">
         <div class="estrelas">★★★★★</div>
         <div class="depo-aspas">"</div>
         <p class="depo-texto">Eu já tinha desistido de ter pele bonita. Tentei antibiótico, cremes caros, tudo. Em 3 semanas seguindo o plano minha pele ficou mais limpa do que nunca. As receitas caseiras são inacreditavelmente simples.</p>
-        <div class="depo-autor">
-          <div class="depo-avatar">👩🏽</div>
-          <div><div class="depo-nome">Mariana S.</div><div class="depo-info">28 anos — São Paulo</div></div>
-        </div>
+        <div class="depo-autor"><div class="depo-avatar">👩🏽</div><div><div class="depo-nome">Mariana S.</div><div class="depo-info">28 anos — São Paulo</div></div></div>
       </div>
       <div class="depo-card">
         <div class="estrelas">★★★★★</div>
         <div class="depo-aspas">"</div>
         <p class="depo-texto">As manchas que ficaram da acne me incomodavam há anos. Com o clareador natural em 3 semanas já deu pra ver a diferença. O melhor é que não gastei quase nada — tinha tudo em casa.</p>
-        <div class="depo-autor">
-          <div class="depo-avatar">👩🏾</div>
-          <div><div class="depo-nome">Camila R.</div><div class="depo-info">34 anos — Belo Horizonte</div></div>
-        </div>
+        <div class="depo-autor"><div class="depo-avatar">👩🏾</div><div><div class="depo-nome">Camila R.</div><div class="depo-info">34 anos — Belo Horizonte</div></div></div>
       </div>
       <div class="depo-card">
         <div class="estrelas">★★★★★</div>
         <div class="depo-aspas">"</div>
         <p class="depo-texto">Minha pele é super sensível e eu tinha medo de irritar. O guia tem seção específica pra pele sensível. Resultado: pele mais calma, menos vermelhidão e sem acne ativa pela primeira vez em anos.</p>
-        <div class="depo-autor">
-          <div class="depo-avatar">👩🏻</div>
-          <div><div class="depo-nome">Fernanda L.</div><div class="depo-info">25 anos — Curitiba</div></div>
-        </div>
+        <div class="depo-autor"><div class="depo-avatar">👩🏻</div><div><div class="depo-nome">Fernanda L.</div><div class="depo-info">25 anos — Curitiba</div></div></div>
       </div>
     </div>
   </div>
@@ -978,36 +922,34 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
 
 <div class="divisor"></div>
 
-<!-- FAQ -->
 <section class="secao-objecoes">
   <div class="container fade-in">
     <div class="tag-secao">✦ Suas dúvidas</div>
     <h2 class="titulo-secao">Perguntas <em>frequentes</em></h2>
-
     <div class="faq-lista">
       <div class="faq-item">
         <div class="faq-pergunta">Funciona para todo tipo de pele?<span class="faq-seta">+</span></div>
-        <div class="faq-resposta">Sim! O guia tem um capítulo dedicado a identificar seu tipo de pele — oleosa, seca, mista ou sensível — e a rotina é adaptada para cada tipo. Você vai seguir exatamente o que funciona para a sua pele.</div>
+        <div class="faq-resposta">Sim! O guia tem um capítulo dedicado a identificar seu tipo de pele — oleosa, seca, mista ou sensível — e a rotina é adaptada para cada tipo.</div>
       </div>
       <div class="faq-item">
         <div class="faq-pergunta">Em quanto tempo vejo resultado?<span class="faq-seta">+</span></div>
-        <div class="faq-resposta">Os primeiros resultados aparecem ainda na primeira semana — redução de oleosidade e menos inflamação. Manchas e acne ativa melhoram progressivamente ao longo dos 21 dias. Resultados dependem da consistência e do seu tipo de pele.</div>
+        <div class="faq-resposta">Os primeiros resultados aparecem ainda na primeira semana — redução de oleosidade e menos inflamação. Manchas e acne ativa melhoram progressivamente ao longo dos 21 dias.</div>
       </div>
       <div class="faq-item">
         <div class="faq-pergunta">Os ingredientes são difíceis de encontrar?<span class="faq-seta">+</span></div>
-        <div class="faq-resposta">Não. Todos os ingredientes são encontrados em mercados, farmácias e lojas de produtos naturais. Muitos você provavelmente já tem em casa agora — como mel, limão e aloe vera.</div>
+        <div class="faq-resposta">Não. Todos os ingredientes são encontrados em mercados, farmácias e lojas de produtos naturais. Muitos você provavelmente já tem em casa agora.</div>
       </div>
       <div class="faq-item">
         <div class="faq-pergunta">Quanto tempo leva a rotina por dia?<span class="faq-seta">+</span></div>
-        <div class="faq-resposta">A rotina matinal leva de 5 a 8 minutos. A noturna é similar. As máscaras são aplicadas 2 a 3 vezes por semana e levam de 10 a 20 minutos. Perfeitamente encaixável na rotina de qualquer mulher.</div>
+        <div class="faq-resposta">A rotina matinal leva de 5 a 8 minutos. A noturna é similar. As máscaras são aplicadas 2 a 3 vezes por semana e levam de 10 a 20 minutos.</div>
       </div>
       <div class="faq-item">
         <div class="faq-pergunta">Como recebo o guia após a compra?<span class="faq-seta">+</span></div>
-        <div class="faq-resposta">Imediatamente após a confirmação do pagamento você recebe um e-mail com o link de acesso ao guia em PDF. Funciona em celular, tablet e computador. Acesso vitalício — você pode baixar e guardar para sempre.</div>
+        <div class="faq-resposta">Imediatamente após a confirmação do pagamento você recebe um e-mail com o link de acesso ao guia em PDF. Acesso vitalício.</div>
       </div>
       <div class="faq-item">
         <div class="faq-pergunta">E se não funcionar para mim?<span class="faq-seta">+</span></div>
-        <div class="faq-resposta">Você tem 7 dias de garantia incondicional. Se por qualquer motivo não gostar ou não ver resultado, basta enviar um e-mail e devolvemos 100% do seu dinheiro sem perguntas. Compra totalmente sem risco.</div>
+        <div class="faq-resposta">Você tem 7 dias de garantia incondicional. Se por qualquer motivo não gostar, devolvemos 100% do seu dinheiro sem perguntas.</div>
       </div>
     </div>
   </div>
@@ -1015,7 +957,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
 
 <div class="divisor"></div>
 
-<!-- GARANTIA -->
 <section class="secao-garantia">
   <div class="container fade-in">
     <div class="garantia-box">
@@ -1028,7 +969,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
   </div>
 </section>
 
-<!-- PREÇO -->
 <section class="secao-preco" id="preco">
   <div class="preco-box fade-in">
     <div class="tag-promo">✦ Promoção Semana da Mulher ✦</div>
@@ -1048,7 +988,6 @@ src="https://www.facebook.com/tr?id=1872436450143529&ev=PageView&noscript=1"
   </div>
 </section>
 
-<!-- RODAPÉ -->
 <footer>
   <div class="footer-logo">Pele Linda</div>
   <p>© 2025 Pele Linda — Todos os direitos reservados</p>
